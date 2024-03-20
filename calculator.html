@@ -59,21 +59,23 @@
     </div>
     <script>
         let currentValue = document.getElementById('text');
+    
         function Input(value) {
-           currentValue.value+=value;
+            currentValue.value += value;
         }
-
+    
         function clearInput() {
-            document.getElementById('text').value ="";
+            currentValue.value = "";
         }
-
+    
         function deleteLast() {
             currentValue.value = currentValue.value.slice(0, -1);
         }
-
+    
         function result(){
-            currentValue.value=eval(currentValue);
+            currentValue.value = eval(currentValue.value);
         }
-        </script>
+    </script>
+    
         </body>
         </html>
